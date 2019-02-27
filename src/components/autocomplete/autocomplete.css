@@ -1,2 +1,143 @@
 .container {
+    height: 120px;
+    background-image: linear-gradient(to right, #FF690F , #EA432A);
+    padding: 30px 0 0 0;
 }
+
+.movieItem {
+    width: 100%;
+    background: white;
+    padding: 10px 55px;
+}
+
+.movieItemDetails {
+    font-size: 14px;
+    color: #73756a;
+    font-family: serif;
+}
+
+.movieItemTitle {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.iconWrapper {
+    align-items: center; 
+    height: 60px;
+    justify-content: center;
+    display: flex;
+}
+
+.iconWrapperSearch {
+    align-items: center;
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;
+    fill: #fa6a28;
+    height: 60px;
+    background: white;
+}
+
+.iconVideoBlack{
+    height: 20px;
+    fill: #000;
+    width: 20px;
+}
+
+.iconVideoWhite{
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.inputIconWrapper {
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.inputBar {
+    display: grid; 
+    background: rgba(255, 255, 255, .3);
+    height: 60px;  
+    grid-template-columns: 50px 1fr;
+}
+
+.inputWrapper {
+    display: grid;
+    height: 60px;
+    background: #fff;
+    grid-template-columns: 60px 1fr;
+}
+
+.content{
+    margin: auto;
+    width: 90%
+}
+
+.contentWithText {
+    display: grid;
+    grid-template-columns: 1fr 55px;
+    grid-gap: 3px;
+}
+
+.moviesList {
+    position: relative;
+    margin-right:45px; 
+    left: 45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inputLowerText {
+    font-family: serif;
+    font-size: 12px;
+    color: #73756a;
+}
+
+:focus {
+    outline: none;
+}
+
+.input {
+    width: 100%;
+    background: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    height: 100%;
+    border: none;
+    color: white;
+}
+
+.inputWithText {
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    height: 25px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+::placeholder{
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .movieItemDetails {
+        font-size: 12px;
+    }
+
+    .movieItem {
+        padding: 10px 5px 10px 30px;
+    }
+
+    .movieItemTitle, .input, .inputWithText, ::placeholder {
+        font-size: 14px;
+    }
+}
+
+
+
+
